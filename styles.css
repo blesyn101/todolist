@@ -1,0 +1,72 @@
+body {
+  font-family: sans-serif;
+  background-color: #f0f0f0;
+}
+
+#todo-input,
+#add-btn,
+#clear-btn {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+#todo-input {
+  width: 50%;
+  border: none;
+}
+#add-btn {
+  background-color: greenyellow;
+}
+#clear-btn {
+  background-color: coral;
+}
+ul {
+  width: 50%;
+}
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+.complete-btn,
+.delete-btn {
+  padding: 7px;
+  font-size: 0.7rem;
+  margin: 0 5px;
+  border: none;
+  border-radius: 3px;
+}
+.delete-btn {
+  background-color: red;
+}
+/* Media Queries */
+
+@media (max-width: 768px) {
+  #todo-input {
+    width: 70%;
+  }
+  ul {
+    width: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  #todo-input {
+    width: 90%;
+  }
+  ul {
+    width: 90%;
+  }
+  .complete-btn,
+  .delete-btn {
+    padding: 5px;
+    font-size: 0.5rem;
+  }
+}
